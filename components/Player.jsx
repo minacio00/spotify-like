@@ -88,8 +88,8 @@ const Player = () => {
             <div className="flex items-center justify-evenly">
                 <SwitchHorizontalIcon className="button"/>
                 <RewindIcon
-                onClick={() => spotifyApi.skipToPrevious() // this used to be broken on spotify's side, it may break again
-                }
+                // onClick={() => spotifyApi.skipToPrevious() // this used to be broken on spotify's side, it may break again 
+                // }
                 className= "button"/>
 
                 {isPlaying ? (
@@ -99,7 +99,8 @@ const Player = () => {
                 }
 
                 <FastForwardIcon className="button"
-                onClick={() => spotifyApi.skipToPrevious()}/>
+                // onClick={() => spotifyApi.skipToNext()}
+                />
                 <ReplyIcon className="button w-4"/>
 
             </div>
